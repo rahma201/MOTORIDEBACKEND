@@ -1,53 +1,41 @@
-# MOTORIDEBACKEND
-MOTRIDEBACKEND is a backend project for managing motorcycles, including maintenance, buying and selling, as well as motorcycle-related gear such as clothing and protective equipment. The project is built using ASP.NET Core MVC and Web API, providing a complete system for both Users and Admins.
+# MOTRIDEBACKEND
+This project is a backend web API that contains endpoints for two types of users: **Users** and **Admins**. The API allows users to browse motorcycles, purchase bikes, book maintenance services, and explore related gear such as clothing and protective equipment. The admin endpoints allow admins to manage all content and operations available to users.
 
-Features
-Users
+---
 
-Browse and purchase motorcycles and related items.
+## Technologies Used
 
-Book maintenance services with online payment support.
-
-Manage orders and shopping cart.
-
-Receive notifications about offers or order status.
-
-Admins
-
-Manage motorcycles and products (Add, Update, Delete).
-
-Manage maintenance requests and orders.
-
-Monitor and manage user activities.
-
-Send notifications and promotional offers to users.
-
-Technology Stack
-
-ASP.NET Core MVC
-
-ASP.NET Web API
-
-C#
-
-SQL Server
-
-Entity Framework Core
-
-JWT Authentication (optional, if login system is implemented)
-
-jQuery / AJAX (for dynamic interaction)
+- **Backend:**
+  - **ASP.NET Core Web API**: To build the API using RESTful principles.
+  - **C#**: The programming language used for backend development.
+  - **SQL Server**: To manage the database.
+  - **Entity Framework Core**: For database interactions.
+  - **JWT Authentication** (optional): For secure access to endpoints.
 
 
+---
 
-Project Structure
+## API Components
 
-Models: Contains all entity models such as Motorcycle, Cart, Order, Maintenance, Customer, Notification.
+### 1. **User Endpoints**
+- **Motorcycle Listings**: View motorcycles available for sale or rent.
+- **Maintenance Booking**: Schedule maintenance services.
+- **Gear Shop**: Browse and purchase related gear such as helmets, clothing, and protective equipment.
+- **Shopping Cart and Orders**: Add items to cart, place orders, and track order status.
+- **Notifications**: Receive updates about orders or promotions.
 
-Controllers: Handle API or MVC operations for each entity.
+### 2. **Admin Endpoints**
+- **Motorcycle Management**: Add, edit, or delete motorcycles.
+- **Maintenance & Orders Management**: View and manage maintenance requests and user orders.
+- **Gear Management**: Add, edit, or remove gear items.
+- **User Management**: Monitor and manage user accounts.
+- **Notifications & Promotions**: Send updates or promotional messages to users.
 
-Views: Web pages for Admin or User (if MVC part is used).
+---
 
-Data: Database and configuration files.
-
-ViewModels: Prepare data for communication between Controllers and Views.
+## How to Run the Project
+1. Clone or download the project:
+  bash
+       https://github.com/rahma201/MOTORIDEBACKEND.git
+   ```bash
+   git clone <repository-url>
